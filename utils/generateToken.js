@@ -1,7 +1,9 @@
-const jwt =require("jsonwebtoken") 
+import jwt from "jsonwebtoken"
 
-export const generateToken =(id)=>{
+ const generateToken =(id)=>{
         return jwt.sign({id},"shivani",{
                 expiresIn:"2d"
         })
 }
+
+export default generateToken

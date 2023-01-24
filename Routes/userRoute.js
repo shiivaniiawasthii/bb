@@ -1,7 +1,7 @@
-const express = require("express") 
-const router = express.Router()
-const { loginUser, registerUser } = require("../Controller/userController.js") 
+import express from "express"
 
+import { loginUser, registerUser } from "../Controller/userController.js"
+const router = express.Router()
 
 
 router.route('/').post(registerUser)
